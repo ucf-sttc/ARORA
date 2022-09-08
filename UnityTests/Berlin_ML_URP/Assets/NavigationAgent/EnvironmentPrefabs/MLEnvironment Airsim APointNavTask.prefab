@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2449259002687624735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449259002687624729}
+  - component: {fileID: 2449259002687624728}
+  - component: {fileID: 1266004957990246844}
+  - component: {fileID: 8375023599968011050}
+  m_Layer: 0
+  m_Name: MLEnvironment Airsim APointNavTask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449259002687624729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259002687624735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2348.51, y: 36.512093, z: -619.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2449259003729067772}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2449259002687624728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259002687624735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf9f393d0a32424193f9cf25ad981f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agents: []
+  listArea: []
+  fastForward: 0
+--- !u!114 &1266004957990246844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259002687624735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb7901d641ea8b49983c43ef587b0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  segmentationOutputMode: 1
+  useAlternateColorForTreeCollidersDuringTagSegmentation: 0
+  keyForAlternateColoringOfTreesCollidersDuringTagSegmentation: SPECIES
+  useAlternateColorForParkedVehiclesDuringTagSegmentation: 0
+  keyForAlternateColoringOfParkedVehiclesDuringTagSegmentation: MODEL_NAME
+  onlySegmentParkedVehicles: 0
+--- !u!114 &8375023599968011050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259002687624735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9505a5cf5233f4a48bd800416aef369a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NavigationAreaObject: {fileID: 2449259003729067763}
+  m_NavigationArea: {fileID: 0}
+  m_NumExplorationPointObjects: 100
+  explorationPointPrefab: {fileID: 3742726121265475844, guid: 43cde87cde8b37a47811decae47f27ab,
+    type: 3}
+  goalPointPrefab: {fileID: 2249109120165364299, guid: c328facde9501ab4fa9368eb5c5c3805,
+    type: 3}
+  m_goalPoint:
+  - {fileID: 0}
+  agentAllowedArea: []
+  m_Default_Agent_Type: 1
+  AgentPrefab: {fileID: 6239487747026801133, guid: 583412e7a343482488b022bd199e619b,
+    type: 3}
+  m_NumAgents: 1
+  m_Agents: []
+  agentCarPhysics: 0
+  observationMode: 0
+--- !u!1 &2449259003729067763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449259003729067772}
+  - component: {fileID: 8375023598298272208}
+  m_Layer: 0
+  m_Name: MLArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449259003729067772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259003729067763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449259002687624729}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8375023598298272208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449259003729067763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a9832c2b4a5a74ab8c0570ded2c1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSlope: 10
+  validSpawnLocations: []
+  trainingAreaX: 0
