@@ -1,3 +1,5 @@
+# WARNING 
+This project is currently in an incomplete state while we decide how to make the asset files available. At this time only the code is guaranteed to be present in this repository
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
