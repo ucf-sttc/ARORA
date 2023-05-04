@@ -36,7 +36,7 @@ public class MapSideChannel : SideChannel
         {
             outMessage.WriteString("mapSizeResponse");
             outMessage.WriteFloat32(mapController.m_lengthX);
-            outMessage.WriteFloat32(mapController.m_lengthX);
+            outMessage.WriteFloat32(mapController.m_lengthZ);
         }
         else // binaryMap is default
         {
