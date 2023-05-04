@@ -1,11 +1,11 @@
 # Introduction 
 This project contains the Unity based code for ARORA simulator.
 
-# pre-requisites
+# Pre-requisites
 
-* Add the ssh key to your github account to access our repos using shh: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+* Add the ssh key to your github account to access our repos using ssh: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 * Install the aws cli to access our asset files from aws s3: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-* Install Unity Editor version 2020.3.33f1 with packages Addressable 1.18.19 and Universal RP 10.10.1.
+* Install Unity Editor version 2020.3.33f1 with packages Addressable 1.18.19 and Universal RP 10.10.1 : https://docs.unity3d.com/2021.1/Documentation/Manual/GettingStartedInstallingUnity.html
 
 # Get the code and assets
 
