@@ -1,0 +1,1429 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Vehicles
+  m_EditorClassIdentifier: 
+  m_GroupName: Vehicles
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d666d7deb06e68d41a0ed3654abdc596
+  m_SerializeEntries:
+  - m_GUID: d66e91564bd700f479d6e8278eed45d3
+    m_Address: Assets/VehicleTexture2DArray.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 18700000, guid: d66e91564bd700f479d6e8278eed45d3, type: 2}
+    m_TargetAsset: {fileID: 18700000, guid: d66e91564bd700f479d6e8278eed45d3, type: 2}
+  - m_GUID: 7b0d685c7b8ff8944bb2286c2d3f4daa
+    m_Address: Assets/VehicleReplacementMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 7b0d685c7b8ff8944bb2286c2d3f4daa, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 7b0d685c7b8ff8944bb2286c2d3f4daa, type: 2}
+  - m_GUID: 63098214a1d8e3245a803662007d6808
+    m_Address: Assets/Vehicle_Instance.shader
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4800000, guid: 63098214a1d8e3245a803662007d6808, type: 3}
+    m_TargetAsset: {fileID: 4800000, guid: 63098214a1d8e3245a803662007d6808, type: 3}
+  - m_GUID: 2867c711db3b5804aa82a37fa800a438
+    m_Address: Assets/UMS_LODs/Wheels_yellow/Wheels_yellow_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 2867c711db3b5804aa82a37fa800a438, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 2867c711db3b5804aa82a37fa800a438, type: 2}
+  - m_GUID: 79d484e15491f7e41b06de2534ca2938
+    m_Address: Assets/UMS_LODs/Wheels_yellow/Wheels_yellow_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 79d484e15491f7e41b06de2534ca2938, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 79d484e15491f7e41b06de2534ca2938, type: 2}
+  - m_GUID: aec56af52e914a742974ad1dcdf73cdd
+    m_Address: Assets/UMS_LODs/Wheels_pewter/Wheels_pewter_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: aec56af52e914a742974ad1dcdf73cdd, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: aec56af52e914a742974ad1dcdf73cdd, type: 2}
+  - m_GUID: 148532ecc1a8a1f479a0cc0eb7016c14
+    m_Address: Assets/UMS_LODs/Wheels_pewter/Wheels_pewter_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 148532ecc1a8a1f479a0cc0eb7016c14, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 148532ecc1a8a1f479a0cc0eb7016c14, type: 2}
+  - m_GUID: fe0f43f4bf12aee45acc3b85fe3d73ab
+    m_Address: Assets/UMS_LODs/Wheels/Wheels_combined_static/02_ 11.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: fe0f43f4bf12aee45acc3b85fe3d73ab, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: fe0f43f4bf12aee45acc3b85fe3d73ab, type: 2}
+  - m_GUID: 7d6efb1b46b5113498b613f6862b0c3f
+    m_Address: Assets/UMS_LODs/Wheels/Wheels_combined_static/02_ 10.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 7d6efb1b46b5113498b613f6862b0c3f, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 7d6efb1b46b5113498b613f6862b0c3f, type: 2}
+  - m_GUID: 0ced23d9837b31b4abd67455ec9d41d7
+    m_Address: Assets/UMS_LODs/Wheels/Wheels_combined_static/01_ 11.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 0ced23d9837b31b4abd67455ec9d41d7, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 0ced23d9837b31b4abd67455ec9d41d7, type: 2}
+  - m_GUID: 807b617cd1fd45d44803f4499add3244
+    m_Address: Assets/UMS_LODs/Wheels/Wheels_combined_static/01_ 10.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 807b617cd1fd45d44803f4499add3244, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 807b617cd1fd45d44803f4499add3244, type: 2}
+  - m_GUID: e2139b30590f35546a7b52ff25d6f48b
+    m_Address: Assets/UMS_LODs/Wheel_RR_white/Wheel_RR_white_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: e2139b30590f35546a7b52ff25d6f48b, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: e2139b30590f35546a7b52ff25d6f48b, type: 2}
+  - m_GUID: e82ff91041f98dd42a4ce036f50e734c
+    m_Address: Assets/UMS_LODs/Wheel_RR_white/Wheel_RR_white_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: e82ff91041f98dd42a4ce036f50e734c, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: e82ff91041f98dd42a4ce036f50e734c, type: 2}
+  - m_GUID: a30ecd493ebe350419ce599d6b9ca32c
+    m_Address: Assets/UMS_LODs/Wheel_RL_white/Wheel_RL_white_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: a30ecd493ebe350419ce599d6b9ca32c, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: a30ecd493ebe350419ce599d6b9ca32c, type: 2}
+  - m_GUID: 797d50f2af1b99f4186c0da28be412cf
+    m_Address: Assets/UMS_LODs/Wheel_RL_white/Wheel_RL_white_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 797d50f2af1b99f4186c0da28be412cf, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 797d50f2af1b99f4186c0da28be412cf, type: 2}
+  - m_GUID: 787cdca40935bbd4ea189f1b098df493
+    m_Address: Assets/UMS_LODs/Wheel_FR_white/Wheel_FR_white_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 787cdca40935bbd4ea189f1b098df493, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 787cdca40935bbd4ea189f1b098df493, type: 2}
+  - m_GUID: bb4fedc35697ab34393a97b3864b333c
+    m_Address: Assets/UMS_LODs/Wheel_FR_white/Wheel_FR_white_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: bb4fedc35697ab34393a97b3864b333c, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: bb4fedc35697ab34393a97b3864b333c, type: 2}
+  - m_GUID: cba01ea85a6ac3f4798fed9bba8095dc
+    m_Address: Assets/UMS_LODs/Wheel_FL_white/Wheel_FL_white_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: cba01ea85a6ac3f4798fed9bba8095dc, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: cba01ea85a6ac3f4798fed9bba8095dc, type: 2}
+  - m_GUID: 3a8f532eee53b274b81da5b3ada4d4bd
+    m_Address: Assets/UMS_LODs/Wheel_FL_white/Wheel_FL_white_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 3a8f532eee53b274b81da5b3ada4d4bd, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 3a8f532eee53b274b81da5b3ada4d4bd, type: 2}
+  - m_GUID: 3545b9949ad5fd949b2b968f3a2637b2
+    m_Address: Assets/UMS_LODs/Van/Van_combined_static/01_ 13.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 3545b9949ad5fd949b2b968f3a2637b2, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 3545b9949ad5fd949b2b968f3a2637b2, type: 2}
+  - m_GUID: 6cead62d4941b7c438aa149eec12b978
+    m_Address: Assets/UMS_LODs/Truck/Truck_combined_static/02_ 19.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 6cead62d4941b7c438aa149eec12b978, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 6cead62d4941b7c438aa149eec12b978, type: 2}
+  - m_GUID: 2056dbc46f421bc4fa84522024927b1c
+    m_Address: Assets/UMS_LODs/Truck/Truck_combined_static/01_ 19.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 2056dbc46f421bc4fa84522024927b1c, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 2056dbc46f421bc4fa84522024927b1c, type: 2}
+  - m_GUID: 6d0c405b492306748994e9fed1462cc0
+    m_Address: Assets/UMS_LODs/TrailerRig/TrailerRig_combined_static/02_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 6d0c405b492306748994e9fed1462cc0, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 6d0c405b492306748994e9fed1462cc0, type: 2}
+  - m_GUID: b225467c8af75bf4e8e2a2f0f3629ab0
+    m_Address: Assets/UMS_LODs/TrailerRig/TrailerRig_combined_static/01_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: b225467c8af75bf4e8e2a2f0f3629ab0, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: b225467c8af75bf4e8e2a2f0f3629ab0, type: 2}
+  - m_GUID: 775d221fbe5d26646bc438b09b4bffc2
+    m_Address: Assets/UMS_LODs/Traffic_B_Van/Traffic_B_Van_combined_static/02_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 775d221fbe5d26646bc438b09b4bffc2, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 775d221fbe5d26646bc438b09b4bffc2, type: 2}
+  - m_GUID: d1d1697dae32c894d9414d4de8089510
+    m_Address: Assets/UMS_LODs/Traffic_B_Van/Traffic_B_Van_combined_static/01_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: d1d1697dae32c894d9414d4de8089510, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: d1d1697dae32c894d9414d4de8089510, type: 2}
+  - m_GUID: 65383ffcc9eda4f47bc932cb0ba8670d
+    m_Address: Assets/UMS_LODs/Traffic_B_Truck/Traffic_B_Truck_combined_static/02_
+      1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 65383ffcc9eda4f47bc932cb0ba8670d, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 65383ffcc9eda4f47bc932cb0ba8670d, type: 2}
+  - m_GUID: b43c6ee3f3af8804ab7d81c8c414c81d
+    m_Address: Assets/UMS_LODs/Traffic_B_Truck/Traffic_B_Truck_combined_static/01_
+      1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: b43c6ee3f3af8804ab7d81c8c414c81d, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: b43c6ee3f3af8804ab7d81c8c414c81d, type: 2}
+  - m_GUID: 63183f0dfea8e554b84151378a1cda1c
+    m_Address: Assets/UMS_LODs/Traffic_B_MidSedan_2_wheels/Traffic_B_MidSedan_2_wheels_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 63183f0dfea8e554b84151378a1cda1c, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 63183f0dfea8e554b84151378a1cda1c, type: 2}
+  - m_GUID: af7c47b385326ee49845cdde1832259a
+    m_Address: Assets/UMS_LODs/Traffic_B_MidSedan_2_wheels/Traffic_B_MidSedan_2_wheels_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: af7c47b385326ee49845cdde1832259a, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: af7c47b385326ee49845cdde1832259a, type: 2}
+  - m_GUID: d80d1bfee482e0c4fa0184bf48f3c374
+    m_Address: Assets/UMS_LODs/Suv/Suv_combined_static/02_ 17.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: d80d1bfee482e0c4fa0184bf48f3c374, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: d80d1bfee482e0c4fa0184bf48f3c374, type: 2}
+  - m_GUID: a51555ed016228b4499a9f5a02b05abb
+    m_Address: Assets/UMS_LODs/Suv/Suv_combined_static/01_ 17.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: a51555ed016228b4499a9f5a02b05abb, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: a51555ed016228b4499a9f5a02b05abb, type: 2}
+  - m_GUID: b9f53107162bfb646866b6ffa76a8d65
+    m_Address: Assets/UMS_LODs/Small_Car/Small_Car_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: b9f53107162bfb646866b6ffa76a8d65, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: b9f53107162bfb646866b6ffa76a8d65, type: 2}
+  - m_GUID: 3609134ab478d2e43b5fd3ab0c682f4e
+    m_Address: Assets/UMS_LODs/Small_Car/Small_Car_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 3609134ab478d2e43b5fd3ab0c682f4e, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 3609134ab478d2e43b5fd3ab0c682f4e, type: 2}
+  - m_GUID: 2aba62128f99b194b9b9d85627d6b276
+    m_Address: Assets/UMS_LODs/SedanPrefWheels/SedanPrefWheels_combined_static/03_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 2aba62128f99b194b9b9d85627d6b276, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 2aba62128f99b194b9b9d85627d6b276, type: 2}
+  - m_GUID: 49ca126726dfe8649ac6033388b4f723
+    m_Address: Assets/UMS_LODs/SedanPrefWheels/SedanPrefWheels_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 49ca126726dfe8649ac6033388b4f723, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 49ca126726dfe8649ac6033388b4f723, type: 2}
+  - m_GUID: 316158d4b0943184db61910f95266ad9
+    m_Address: Assets/UMS_LODs/SedanPrefWheels/SedanPrefWheels_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 316158d4b0943184db61910f95266ad9, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 316158d4b0943184db61910f95266ad9, type: 2}
+  - m_GUID: 4be0f1a5e91b2af4094bd1be4feeb725
+    m_Address: Assets/UMS_LODs/SedanPrefBody/SedanPrefBody_combined_static/03_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 4be0f1a5e91b2af4094bd1be4feeb725, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 4be0f1a5e91b2af4094bd1be4feeb725, type: 2}
+  - m_GUID: 1af42321eea49654fade1d474139f39f
+    m_Address: Assets/UMS_LODs/SedanPrefBody/SedanPrefBody_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 1af42321eea49654fade1d474139f39f, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 1af42321eea49654fade1d474139f39f, type: 2}
+  - m_GUID: 9f273bc511e428245aaa5db82c04ec78
+    m_Address: Assets/UMS_LODs/SedanPrefBody/SedanPrefBody_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 9f273bc511e428245aaa5db82c04ec78, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 9f273bc511e428245aaa5db82c04ec78, type: 2}
+  - m_GUID: 56e7f6f1e0046d5469fddea2c0967acb
+    m_Address: Assets/UMS_LODs/SEDAN/SEDAN_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 56e7f6f1e0046d5469fddea2c0967acb, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 56e7f6f1e0046d5469fddea2c0967acb, type: 2}
+  - m_GUID: aa8f97bd72bd3954e8198ef5f4ad89bf
+    m_Address: Assets/UMS_LODs/SEDAN/SEDAN_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: aa8f97bd72bd3954e8198ef5f4ad89bf, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: aa8f97bd72bd3954e8198ef5f4ad89bf, type: 2}
+  - m_GUID: e52235fc0acbfa14bb2a8a2285d45744
+    m_Address: Assets/UMS_LODs/Mid_Sedan_2_body/Mid_Sedan_2_body_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: e52235fc0acbfa14bb2a8a2285d45744, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: e52235fc0acbfa14bb2a8a2285d45744, type: 2}
+  - m_GUID: 87c34469a9d45d8469e552a74817d1a0
+    m_Address: Assets/UMS_LODs/Mid_Sedan_2_body/Mid_Sedan_2_body_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 87c34469a9d45d8469e552a74817d1a0, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 87c34469a9d45d8469e552a74817d1a0, type: 2}
+  - m_GUID: 00cb5d18a71fd4948a1639197f5784ad
+    m_Address: Assets/UMS_LODs/City_Bus/City_Bus_combined_static/03_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 00cb5d18a71fd4948a1639197f5784ad, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 00cb5d18a71fd4948a1639197f5784ad, type: 2}
+  - m_GUID: 1fb63e9691163534c91f8ec7135ab498
+    m_Address: Assets/UMS_LODs/City_Bus/City_Bus_combined_static/02_ 6.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 1fb63e9691163534c91f8ec7135ab498, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 1fb63e9691163534c91f8ec7135ab498, type: 2}
+  - m_GUID: bc9a76c9aceb4a34ab0369508838174a
+    m_Address: Assets/UMS_LODs/City_Bus/City_Bus_combined_static/01_ 6.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: bc9a76c9aceb4a34ab0369508838174a, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: bc9a76c9aceb4a34ab0369508838174a, type: 2}
+  - m_GUID: a94970a1f4728874d8ba4efec89f3f32
+    m_Address: Assets/UMS_LODs/Car2/Car2_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: a94970a1f4728874d8ba4efec89f3f32, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: a94970a1f4728874d8ba4efec89f3f32, type: 2}
+  - m_GUID: b56a9f245a8e9e94da68df78eda3890d
+    m_Address: Assets/UMS_LODs/Car2/Car2_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: b56a9f245a8e9e94da68df78eda3890d, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: b56a9f245a8e9e94da68df78eda3890d, type: 2}
+  - m_GUID: 297ed9ca27e24f841b95d3ac327ca01b
+    m_Address: Assets/UMS_LODs/Car1/Car1_combined_static/02_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 297ed9ca27e24f841b95d3ac327ca01b, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 297ed9ca27e24f841b95d3ac327ca01b, type: 2}
+  - m_GUID: 7c407c9e0a3f13a419e17edd6154f0db
+    m_Address: Assets/UMS_LODs/Body_yellow/Body_yellow_combined_static/03_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 7c407c9e0a3f13a419e17edd6154f0db, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 7c407c9e0a3f13a419e17edd6154f0db, type: 2}
+  - m_GUID: f3919eef8431e5d42864a87897d45a17
+    m_Address: Assets/UMS_LODs/Body_yellow/Body_yellow_combined_static/02_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: f3919eef8431e5d42864a87897d45a17, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: f3919eef8431e5d42864a87897d45a17, type: 2}
+  - m_GUID: 4a7958a9c858f0542bd5a47cea58dbc6
+    m_Address: Assets/UMS_LODs/Body_pewter/Body_pewter_combined_static/02_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 4a7958a9c858f0542bd5a47cea58dbc6, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 4a7958a9c858f0542bd5a47cea58dbc6, type: 2}
+  - m_GUID: 9f6ea89c41b9cfb4883b2a5b49dbdea7
+    m_Address: Assets/UMS_LODs/Body_pewter/Body_pewter_combined_static/01_.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 9f6ea89c41b9cfb4883b2a5b49dbdea7, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 9f6ea89c41b9cfb4883b2a5b49dbdea7, type: 2}
+  - m_GUID: 468ae2972063cfe4c95b026e007ff174
+    m_Address: Assets/UMS_LODs/Body/BODY_combined_static/02_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 468ae2972063cfe4c95b026e007ff174, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 468ae2972063cfe4c95b026e007ff174, type: 2}
+  - m_GUID: f801f7d7b705f8c45b6d0029eb5e2af2
+    m_Address: Assets/UMS_LODs/Body/BODY_combined_static/01_ 1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: f801f7d7b705f8c45b6d0029eb5e2af2, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: f801f7d7b705f8c45b6d0029eb5e2af2, type: 2}
+  - m_GUID: a44a2da232166624cac222ca4cf34e3f
+    m_Address: Assets/UMS_LODs/ambulance_orange/ambulance_orange_combined_static/02_
+      1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: a44a2da232166624cac222ca4cf34e3f, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: a44a2da232166624cac222ca4cf34e3f, type: 2}
+  - m_GUID: 37973bcb2ff05124fbcb73237c3d937d
+    m_Address: Assets/UMS_LODs/ambulance_orange/ambulance_orange_combined_static/01_
+      1.mesh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4300000, guid: 37973bcb2ff05124fbcb73237c3d937d, type: 2}
+    m_TargetAsset: {fileID: 4300000, guid: 37973bcb2ff05124fbcb73237c3d937d, type: 2}
+  - m_GUID: 70ef1560a3561714e8ce4b021fa5bb5e
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/WindowsAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 70ef1560a3561714e8ce4b021fa5bb5e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 70ef1560a3561714e8ce4b021fa5bb5e, type: 3}
+  - m_GUID: f7664703b8f46a748b47ca2e25fabdec
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/WindowNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: f7664703b8f46a748b47ca2e25fabdec, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f7664703b8f46a748b47ca2e25fabdec, type: 3}
+  - m_GUID: d9bc540d6c162484a99968bbbb1428c5
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/WindowMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d9bc540d6c162484a99968bbbb1428c5, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d9bc540d6c162484a99968bbbb1428c5, type: 3}
+  - m_GUID: d4c0700508024354cb95369935e1d39b
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/MiscMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d4c0700508024354cb95369935e1d39b, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d4c0700508024354cb95369935e1d39b, type: 3}
+  - m_GUID: 8453a25f1252bc6429c5305cb41ee941
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/Misc_Normal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 8453a25f1252bc6429c5305cb41ee941, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 8453a25f1252bc6429c5305cb41ee941, type: 3}
+  - m_GUID: 9ee4fbf3c768c6a48a7805fd7c9f8a1e
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/Misc_AO.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 9ee4fbf3c768c6a48a7805fd7c9f8a1e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 9ee4fbf3c768c6a48a7805fd7c9f8a1e, type: 3}
+  - m_GUID: 5b27ae418938e3b40b9589d639fd33e9
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Main/Textures/Misc_Albedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5b27ae418938e3b40b9589d639fd33e9, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5b27ae418938e3b40b9589d639fd33e9, type: 3}
+  - m_GUID: 800c6e27794571944ab23f48bbe99052
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/WheelNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 800c6e27794571944ab23f48bbe99052, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 800c6e27794571944ab23f48bbe99052, type: 3}
+  - m_GUID: 94e5d86f435a0994caa98559309dc7a1
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/WheelMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 94e5d86f435a0994caa98559309dc7a1, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 94e5d86f435a0994caa98559309dc7a1, type: 3}
+  - m_GUID: 2fa1f66ceab78994db81cf249d364d53
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/WheelAo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 2fa1f66ceab78994db81cf249d364d53, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 2fa1f66ceab78994db81cf249d364d53, type: 3}
+  - m_GUID: cee04bdf2bea68a4691e18500116dcb3
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/WheelAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: cee04bdf2bea68a4691e18500116dcb3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: cee04bdf2bea68a4691e18500116dcb3, type: 3}
+  - m_GUID: 3441becd372cce541a213b645c7ae60d
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/LightNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 3441becd372cce541a213b645c7ae60d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 3441becd372cce541a213b645c7ae60d, type: 3}
+  - m_GUID: 0f88ba5f921ce544a9a52422b7cd395f
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/LightMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0f88ba5f921ce544a9a52422b7cd395f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0f88ba5f921ce544a9a52422b7cd395f, type: 3}
+  - m_GUID: 5598dae30a2ed854baec62ac8e821704
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/LightAo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5598dae30a2ed854baec62ac8e821704, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5598dae30a2ed854baec62ac8e821704, type: 3}
+  - m_GUID: c9dca5525d947494baf6708d313f3ee5
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/LightAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: c9dca5525d947494baf6708d313f3ee5, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: c9dca5525d947494baf6708d313f3ee5, type: 3}
+  - m_GUID: fd87c7ef3d9daff42af63505944c7fc8
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/InteriorNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: fd87c7ef3d9daff42af63505944c7fc8, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: fd87c7ef3d9daff42af63505944c7fc8, type: 3}
+  - m_GUID: 1f341a3cc86b3d943bd5f05184a611b3
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/InteriorMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 1f341a3cc86b3d943bd5f05184a611b3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1f341a3cc86b3d943bd5f05184a611b3, type: 3}
+  - m_GUID: 6d1827c35abc2a947bd103a3eb264b4e
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/InteriorAo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 6d1827c35abc2a947bd103a3eb264b4e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 6d1827c35abc2a947bd103a3eb264b4e, type: 3}
+  - m_GUID: 28b52b1a344ad0c4494c33ddfc945b87
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/InteriorAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 28b52b1a344ad0c4494c33ddfc945b87, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 28b52b1a344ad0c4494c33ddfc945b87, type: 3}
+  - m_GUID: 71e7f4b72ce1a8249914d8ec43ebe927
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/BodyNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 71e7f4b72ce1a8249914d8ec43ebe927, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 71e7f4b72ce1a8249914d8ec43ebe927, type: 3}
+  - m_GUID: 40f39868d6eeae74b9f70cd274971363
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/BodyMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 40f39868d6eeae74b9f70cd274971363, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 40f39868d6eeae74b9f70cd274971363, type: 3}
+  - m_GUID: 05f2f835026dcd44081779c9023b1bcb
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/BodyAo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 05f2f835026dcd44081779c9023b1bcb, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 05f2f835026dcd44081779c9023b1bcb, type: 3}
+  - m_GUID: d51318ecd263e97498987bbf89fe7013
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Textures/BodyAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d51318ecd263e97498987bbf89fe7013, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d51318ecd263e97498987bbf89fe7013, type: 3}
+  - m_GUID: c5d9371ee92893045be13261cc074f0b
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/WindowsBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c5d9371ee92893045be13261cc074f0b, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c5d9371ee92893045be13261cc074f0b, type: 2}
+  - m_GUID: e9f71fd747ab5034d9e55a345d53299a
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/Windows.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: e9f71fd747ab5034d9e55a345d53299a, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: e9f71fd747ab5034d9e55a345d53299a, type: 2}
+  - m_GUID: 3e83b231d5df3974588e2f7ed712405e
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/WheelAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 3e83b231d5df3974588e2f7ed712405e, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 3e83b231d5df3974588e2f7ed712405e, type: 2}
+  - m_GUID: d14441b3a8c6cde4593dc0bb767b523b
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/Misc_Albedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: d14441b3a8c6cde4593dc0bb767b523b, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: d14441b3a8c6cde4593dc0bb767b523b, type: 2}
+  - m_GUID: ec8c31228f9327d4ba615ec92ef78b85
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/LightAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: ec8c31228f9327d4ba615ec92ef78b85, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: ec8c31228f9327d4ba615ec92ef78b85, type: 2}
+  - m_GUID: 1d066aadd01dd1d40add842c66b2e3d5
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/InteriorAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 1d066aadd01dd1d40add842c66b2e3d5, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 1d066aadd01dd1d40add842c66b2e3d5, type: 2}
+  - m_GUID: 0307af61d12b9d24dbfdcfb7fc5040cf
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/Glass.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 0307af61d12b9d24dbfdcfb7fc5040cf, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 0307af61d12b9d24dbfdcfb7fc5040cf, type: 2}
+  - m_GUID: 51481413680602e4c8a4d4062648e784
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/Materials/BodyAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 51481413680602e4c8a4d4062648e784, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 51481413680602e4c8a4d4062648e784, type: 2}
+  - m_GUID: f0783dff9be367d46b12b1755fc86c6c
+    m_Address: Assets/Models/Vehicles/Vehicle - pro 3d models/Civilian_vehicle_05/CivilianVehicle05.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100130, guid: f0783dff9be367d46b12b1755fc86c6c, type: 3}
+    m_TargetAsset: {fileID: 100130, guid: f0783dff9be367d46b12b1755fc86c6c, type: 3}
+  - m_GUID: 06059915488701b4595f015464f879a6
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/trafficCarsWhite.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 06059915488701b4595f015464f879a6, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 06059915488701b4595f015464f879a6, type: 3}
+  - m_GUID: 0053170aa403f354ba416b1fcf4d77b5
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/TrafficCars.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100010, guid: 0053170aa403f354ba416b1fcf4d77b5, type: 3}
+    m_TargetAsset: {fileID: 100010, guid: 0053170aa403f354ba416b1fcf4d77b5, type: 3}
+  - m_GUID: 6ba4ba49ea201f642b438a2b25b19c42
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/trafficCars.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 6ba4ba49ea201f642b438a2b25b19c42, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 6ba4ba49ea201f642b438a2b25b19c42, type: 2}
+  - m_GUID: 29051f965392f0d479ce3dcd9fcb4a1c
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/carvan.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 29051f965392f0d479ce3dcd9fcb4a1c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 29051f965392f0d479ce3dcd9fcb4a1c, type: 2}
+  - m_GUID: 6ae35ba76ede09f48a61fdaf9d4f7ec4
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/CarSuv.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 6ae35ba76ede09f48a61fdaf9d4f7ec4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 6ae35ba76ede09f48a61fdaf9d4f7ec4, type: 2}
+  - m_GUID: 8886b57b4a6fa8b48bd293569ff135e5
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/CarRig.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 8886b57b4a6fa8b48bd293569ff135e5, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 8886b57b4a6fa8b48bd293569ff135e5, type: 2}
+  - m_GUID: d8c85b1030e8b5e42a5b2878d6244694
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/CarBus.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: d8c85b1030e8b5e42a5b2878d6244694, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: d8c85b1030e8b5e42a5b2878d6244694, type: 2}
+  - m_GUID: 9cde05260a93ce948b3a6e982e73e766
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/Car2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 9cde05260a93ce948b3a6e982e73e766, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 9cde05260a93ce948b3a6e982e73e766, type: 2}
+  - m_GUID: e5f14c992e770bc45b7b2f8f7b56b34f
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Materials/car1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: e5f14c992e770bc45b7b2f8f7b56b34f, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: e5f14c992e770bc45b7b2f8f7b56b34f, type: 2}
+  - m_GUID: 88f2e506cffee574ea6bbb8540fea9b3
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/carvan_white.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 88f2e506cffee574ea6bbb8540fea9b3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 88f2e506cffee574ea6bbb8540fea9b3, type: 3}
+  - m_GUID: 3ff02bb8573574e4cb8b875f02932d61
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/CarSuv_white.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 3ff02bb8573574e4cb8b875f02932d61, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 3ff02bb8573574e4cb8b875f02932d61, type: 3}
+  - m_GUID: 0d719e47352c24c46af0c9a2d46a8558
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/CarRig_dark_blue.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0d719e47352c24c46af0c9a2d46a8558, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0d719e47352c24c46af0c9a2d46a8558, type: 3}
+  - m_GUID: e9d96ffec57c82c4face56ee1063eb87
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/CarPack.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100006, guid: e9d96ffec57c82c4face56ee1063eb87, type: 3}
+    m_TargetAsset: {fileID: 100006, guid: e9d96ffec57c82c4face56ee1063eb87, type: 3}
+  - m_GUID: d60add41cf61a4a4b946cb531850c20f
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/CarBus.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d60add41cf61a4a4b946cb531850c20f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d60add41cf61a4a4b946cb531850c20f, type: 3}
+  - m_GUID: f5b5ee8a980aa5c46920fd9e6cb3983e
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/Car2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: f5b5ee8a980aa5c46920fd9e6cb3983e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f5b5ee8a980aa5c46920fd9e6cb3983e, type: 3}
+  - m_GUID: 4b6f5c299874d16429d243c9017b8463
+    m_Address: Assets/Models/Vehicles/Urban American Assets/Props/Vehicles/Source/car1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 4b6f5c299874d16429d243c9017b8463, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 4b6f5c299874d16429d243c9017b8463, type: 3}
+  - m_GUID: fe6d430e2168ded43b846142a07b01a9
+    m_Address: Assets/Models/Vehicles/sedan/textures/wheel2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: fe6d430e2168ded43b846142a07b01a9, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: fe6d430e2168ded43b846142a07b01a9, type: 3}
+  - m_GUID: e01ddfafc1a9de345981245affd32976
+    m_Address: Assets/Models/Vehicles/sedan/textures/wheel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e01ddfafc1a9de345981245affd32976, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e01ddfafc1a9de345981245affd32976, type: 3}
+  - m_GUID: 0840eeaa6634d8244a98011ff40275f3
+    m_Address: Assets/Models/Vehicles/sedan/textures/UV2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0840eeaa6634d8244a98011ff40275f3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0840eeaa6634d8244a98011ff40275f3, type: 3}
+  - m_GUID: 0390ff72b07de2d44b8145507de2ad88
+    m_Address: Assets/Models/Vehicles/sedan/textures/UV1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0390ff72b07de2d44b8145507de2ad88, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0390ff72b07de2d44b8145507de2ad88, type: 3}
+  - m_GUID: 15bcded0eddd19d4081cac7112c44ebe
+    m_Address: Assets/Models/Vehicles/sedan/fbx/sedan.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: -927199367670048503, guid: 15bcded0eddd19d4081cac7112c44ebe,
+      type: 3}
+    m_TargetAsset: {fileID: -927199367670048503, guid: 15bcded0eddd19d4081cac7112c44ebe,
+      type: 3}
+  - m_GUID: 2f91b559e63de2e438d6917500ca4033
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/wheel2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 2f91b559e63de2e438d6917500ca4033, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 2f91b559e63de2e438d6917500ca4033, type: 2}
+  - m_GUID: 2c68446f02bbf8546b7bad61d08685a2
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/wheel.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 2c68446f02bbf8546b7bad61d08685a2, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 2c68446f02bbf8546b7bad61d08685a2, type: 2}
+  - m_GUID: 282eddb3c8580844ab0b87fc2012f6fd
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/UV2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 282eddb3c8580844ab0b87fc2012f6fd, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 282eddb3c8580844ab0b87fc2012f6fd, type: 2}
+  - m_GUID: aa46244e57d0f9d4d8cbf6a303da87f4
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/UV1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: aa46244e57d0f9d4d8cbf6a303da87f4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: aa46244e57d0f9d4d8cbf6a303da87f4, type: 2}
+  - m_GUID: 910cdfe463cee0d458cf031fd2ce6204
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/sedan-unnamed.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 910cdfe463cee0d458cf031fd2ce6204, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 910cdfe463cee0d458cf031fd2ce6204, type: 2}
+  - m_GUID: 850d812b84fbf1647b4f89b97a234f05
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/sedan-Material__glass_png.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 850d812b84fbf1647b4f89b97a234f05, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 850d812b84fbf1647b4f89b97a234f05, type: 2}
+  - m_GUID: 27869cba2466da0458b4650f920ca76a
+    m_Address: Assets/Models/Vehicles/sedan/fbx/Materials/sedan-Material__dark_png.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 27869cba2466da0458b4650f920ca76a, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 27869cba2466da0458b4650f920ca76a, type: 2}
+  - m_GUID: 9e6b2ffe985a29d47956081f1fac97ef
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/textures/SEDAN.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 9e6b2ffe985a29d47956081f1fac97ef, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 9e6b2ffe985a29d47956081f1fac97ef, type: 3}
+  - m_GUID: 33e5e03cbb218da49a1ea009cc64b392
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/textures/HATCHBACK_1988.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 33e5e03cbb218da49a1ea009cc64b392, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 33e5e03cbb218da49a1ea009cc64b392, type: 3}
+  - m_GUID: 798e4096124f10548a538312d71f03f9
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/SEDAN/SEDAN.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100002, guid: 798e4096124f10548a538312d71f03f9, type: 3}
+    m_TargetAsset: {fileID: 100002, guid: 798e4096124f10548a538312d71f03f9, type: 3}
+  - m_GUID: 3d1ea247aa8b1f341ba90b2f6af7fe50
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/SEDAN/materials/SEDAN_PLASTIC.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 3d1ea247aa8b1f341ba90b2f6af7fe50, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 3d1ea247aa8b1f341ba90b2f6af7fe50, type: 2}
+  - m_GUID: 0665f626cc5314f42800fb7ae6899d8d
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/SEDAN/materials/SEDAN_GLASS_LAMPS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 0665f626cc5314f42800fb7ae6899d8d, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 0665f626cc5314f42800fb7ae6899d8d, type: 2}
+  - m_GUID: 9f8a8df52a6a010419a54c0d9d135121
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/SEDAN/materials/SEDAN_GLASS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 9f8a8df52a6a010419a54c0d9d135121, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 9f8a8df52a6a010419a54c0d9d135121, type: 2}
+  - m_GUID: cf8f951ad11fad745a3633b12fa09ed4
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/SEDAN/materials/SEDAN.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: cf8f951ad11fad745a3633b12fa09ed4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: cf8f951ad11fad745a3633b12fa09ed4, type: 2}
+  - m_GUID: 41cfa8148b1e9c443aaeb464c62d1c04
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/materials/HATCHBACK_1988_RIMS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 41cfa8148b1e9c443aaeb464c62d1c04, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 41cfa8148b1e9c443aaeb464c62d1c04, type: 2}
+  - m_GUID: 66c9286a7fe9016409ff1a9cbfca196d
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/materials/HATCHBACK_1988_MIRRORS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 66c9286a7fe9016409ff1a9cbfca196d, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 66c9286a7fe9016409ff1a9cbfca196d, type: 2}
+  - m_GUID: 41769b539e248db4c90886964a88c143
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/materials/HATCHBACK_1988_GLASS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 41769b539e248db4c90886964a88c143, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 41769b539e248db4c90886964a88c143, type: 2}
+  - m_GUID: c90a675775f754542bb64d4882c99929
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/materials/HATCHBACK_1988_bulbs.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c90a675775f754542bb64d4882c99929, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c90a675775f754542bb64d4882c99929, type: 2}
+  - m_GUID: 8b3ef602f5de7e44fb2613b044fa2008
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/materials/HATCHBACK_1988.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 8b3ef602f5de7e44fb2613b044fa2008, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 8b3ef602f5de7e44fb2613b044fa2008, type: 2}
+  - m_GUID: 6e22a8f7bfe859748818159ce3613f31
+    m_Address: Assets/Models/Vehicles/Hatchback and Sedan/meshes/HATCHBACK/HATCHBACK_1988.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100010, guid: 6e22a8f7bfe859748818159ce3613f31, type: 3}
+    m_TargetAsset: {fileID: 100010, guid: 6e22a8f7bfe859748818159ce3613f31, type: 3}
+  - m_GUID: 22f5954fc3b459043ae3bc26679df50e
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/textures/ambulance__Orange.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 22f5954fc3b459043ae3bc26679df50e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 22f5954fc3b459043ae3bc26679df50e, type: 3}
+  - m_GUID: 663e4ffe6544adc40a638cd222abf9e8
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/meshes/Materials/Plastic.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 663e4ffe6544adc40a638cd222abf9e8, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 663e4ffe6544adc40a638cd222abf9e8, type: 2}
+  - m_GUID: 2b315d2d18ad25d4fb0842c94835f4d4
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/meshes/Materials/Paint.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 2b315d2d18ad25d4fb0842c94835f4d4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 2b315d2d18ad25d4fb0842c94835f4d4, type: 2}
+  - m_GUID: f27b85431c2d8e1449ca230b1b3bcf92
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/meshes/Materials/Lamps.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: f27b85431c2d8e1449ca230b1b3bcf92, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: f27b85431c2d8e1449ca230b1b3bcf92, type: 2}
+  - m_GUID: b3bb38f859ffdd74cbe9664d4167f3e5
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/meshes/Materials/Glass.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: b3bb38f859ffdd74cbe9664d4167f3e5, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: b3bb38f859ffdd74cbe9664d4167f3e5, type: 2}
+  - m_GUID: c0ea34abf3a1a1c40813385804b4ca8a
+    m_Address: Assets/Models/Vehicles/FreeAmbulance/meshes/ambulance.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100000, guid: c0ea34abf3a1a1c40813385804b4ca8a, type: 3}
+    m_TargetAsset: {fileID: 100000, guid: c0ea34abf3a1a1c40813385804b4ca8a, type: 3}
+  - m_GUID: df7495afdce80f54694ff3d2fae828ac
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Tocus.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100000, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
+    m_TargetAsset: {fileID: 100000, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
+  - m_GUID: d03b19c44a8bee244b8f14768aa1a013
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Wheel_b.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d03b19c44a8bee244b8f14768aa1a013, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d03b19c44a8bee244b8f14768aa1a013, type: 3}
+  - m_GUID: 927c5f7f460822c4d93c7e6c9db440e6
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Wheel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 927c5f7f460822c4d93c7e6c9db440e6, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 927c5f7f460822c4d93c7e6c9db440e6, type: 3}
+  - m_GUID: 977848e5af77bb146b47990fca66c0f8
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Steering_wheel.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 977848e5af77bb146b47990fca66c0f8, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 977848e5af77bb146b47990fca66c0f8, type: 3}
+  - m_GUID: fdfeea65af3a1b346aea351a5951ceed
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Spring.tif
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: fdfeea65af3a1b346aea351a5951ceed, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: fdfeea65af3a1b346aea351a5951ceed, type: 3}
+  - m_GUID: 5e73cf0b90c67184789f285bfbdbc84f
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Seat.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5e73cf0b90c67184789f285bfbdbc84f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5e73cf0b90c67184789f285bfbdbc84f, type: 3}
+  - m_GUID: eda7b5ecbb1b84e4e916803d2c89a955
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Salon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: eda7b5ecbb1b84e4e916803d2c89a955, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: eda7b5ecbb1b84e4e916803d2c89a955, type: 3}
+  - m_GUID: b148ddafe9efde543a5ad49f116810ef
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_ligth.tif
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: b148ddafe9efde543a5ad49f116810ef, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b148ddafe9efde543a5ad49f116810ef, type: 3}
+  - m_GUID: 527e377f7da55c546b557ad8c091a4a9
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_inside.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 527e377f7da55c546b557ad8c091a4a9, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 527e377f7da55c546b557ad8c091a4a9, type: 3}
+  - m_GUID: de2dc93b7f902324f87a46b00042b80f
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Grid.tif
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: de2dc93b7f902324f87a46b00042b80f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: de2dc93b7f902324f87a46b00042b80f, type: 3}
+  - m_GUID: dd3fc272ca7f1bf4f987f53a216cf337
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Exhaust_Pipe.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: dd3fc272ca7f1bf4f987f53a216cf337, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: dd3fc272ca7f1bf4f987f53a216cf337, type: 3}
+  - m_GUID: cec41053d5ab45b4dbc11fb2c127624f
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Textures/Tocus_Bottom.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: cec41053d5ab45b4dbc11fb2c127624f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: cec41053d5ab45b4dbc11fb2c127624f, type: 3}
+  - m_GUID: db9051c0f0e895f4ab84eef0a87bc3a5
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Windows.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: db9051c0f0e895f4ab84eef0a87bc3a5, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: db9051c0f0e895f4ab84eef0a87bc3a5, type: 2}
+  - m_GUID: d15a09a5211e1ec498de934a7bf6af11
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Wheel.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: d15a09a5211e1ec498de934a7bf6af11, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: d15a09a5211e1ec498de934a7bf6af11, type: 2}
+  - m_GUID: 0bbb60019d0066d4c9a07d9568e64b5d
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Steering_wheel.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 0bbb60019d0066d4c9a07d9568e64b5d, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 0bbb60019d0066d4c9a07d9568e64b5d, type: 2}
+  - m_GUID: de3e2ef82497afa449987fc493a6ddd7
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Spring.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: de3e2ef82497afa449987fc493a6ddd7, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: de3e2ef82497afa449987fc493a6ddd7, type: 2}
+  - m_GUID: a188b941c68619548b6ef22efad73003
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Seat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: a188b941c68619548b6ef22efad73003, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: a188b941c68619548b6ef22efad73003, type: 2}
+  - m_GUID: 5e2f5fc7cf6b9614c9bcdcb4066800bd
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Salon.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 5e2f5fc7cf6b9614c9bcdcb4066800bd, type: 2}
+  - m_GUID: 595e12d85144c7e47920445346303859
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Plastics.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 595e12d85144c7e47920445346303859, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 595e12d85144c7e47920445346303859, type: 2}
+  - m_GUID: c920ee48dbabd264da8566508a7acd58
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_ligth.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c920ee48dbabd264da8566508a7acd58, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c920ee48dbabd264da8566508a7acd58, type: 2}
+  - m_GUID: 58a785c81055cc8488277b94d0fc1796
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_inside.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 58a785c81055cc8488277b94d0fc1796, type: 2}
+  - m_GUID: c0007dde38610b743993585b8de4d68c
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Grid.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c0007dde38610b743993585b8de4d68c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c0007dde38610b743993585b8de4d68c, type: 2}
+  - m_GUID: cb992e462fb13be4ea9a0e6ff754d710
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Exhaust_Pipe.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: cb992e462fb13be4ea9a0e6ff754d710, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: cb992e462fb13be4ea9a0e6ff754d710, type: 2}
+  - m_GUID: a0f1981304adf464683cda53eaf710eb
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Chrome.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: a0f1981304adf464683cda53eaf710eb, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: a0f1981304adf464683cda53eaf710eb, type: 2}
+  - m_GUID: ac91a9ba2ab06c3489062ad84bd52bf9
+    m_Address: Assets/Models/Vehicles/Car_Low/Tocus/Materials/Tocus_Bottom.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: ac91a9ba2ab06c3489062ad84bd52bf9, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: ac91a9ba2ab06c3489062ad84bd52bf9, type: 2}
+  - m_GUID: 38c38dc5f46a6ab4cb0828a5f86f4f44
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Tire_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 38c38dc5f46a6ab4cb0828a5f86f4f44, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 38c38dc5f46a6ab4cb0828a5f86f4f44, type: 3}
+  - m_GUID: c358e4f015a23a34cbd438db4bb17910
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Tire_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: c358e4f015a23a34cbd438db4bb17910, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: c358e4f015a23a34cbd438db4bb17910, type: 3}
+  - m_GUID: 0b62d124d24c61e40abf6e71e691e06c
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Rims.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0b62d124d24c61e40abf6e71e691e06c, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0b62d124d24c61e40abf6e71e691e06c, type: 3}
+  - m_GUID: ed1c0aa2c2032f4438a22697ac116b90
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Number Plate.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: ed1c0aa2c2032f4438a22697ac116b90, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: ed1c0aa2c2032f4438a22697ac116b90, type: 3}
+  - m_GUID: 1fd3ea61f024c46479fd70346b64909f
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Tire_2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 1fd3ea61f024c46479fd70346b64909f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1fd3ea61f024c46479fd70346b64909f, type: 3}
+  - m_GUID: 5394c257208e8a547bd432c2f7ffdf13
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Tire_1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5394c257208e8a547bd432c2f7ffdf13, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5394c257208e8a547bd432c2f7ffdf13, type: 3}
+  - m_GUID: da0b68174813e8e4e8a1a85f9995966d
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Rims.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: da0b68174813e8e4e8a1a85f9995966d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: da0b68174813e8e4e8a1a85f9995966d, type: 3}
+  - m_GUID: ef15bed8b0cc46645a59be104ac48f56
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Number Plate.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: ef15bed8b0cc46645a59be104ac48f56, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: ef15bed8b0cc46645a59be104ac48f56, type: 3}
+  - m_GUID: 1285711b77606884da3a1a0bfca3167b
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/HeadLights.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 1285711b77606884da3a1a0bfca3167b, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1285711b77606884da3a1a0bfca3167b, type: 3}
+  - m_GUID: d8c6c6a9f5cdd5f4998ab501482c1c8b
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Disc.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: d8c6c6a9f5cdd5f4998ab501482c1c8b, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d8c6c6a9f5cdd5f4998ab501482c1c8b, type: 3}
+  - m_GUID: 31d0125a95418214dafec2b088ee0ed2
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Normals/Bottom.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 31d0125a95418214dafec2b088ee0ed2, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 31d0125a95418214dafec2b088ee0ed2, type: 3}
+  - m_GUID: 47c2f9ad6ef5af44c85f9fb7dd423877
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/HeadLights.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 47c2f9ad6ef5af44c85f9fb7dd423877, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 47c2f9ad6ef5af44c85f9fb7dd423877, type: 3}
+  - m_GUID: 66336951b7c08b0459915989dd3294d5
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Disc.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 66336951b7c08b0459915989dd3294d5, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 66336951b7c08b0459915989dd3294d5, type: 3}
+  - m_GUID: bcf9405fb557ef647ba691d00424b888
+    m_Address: Assets/Models/Vehicles/Car folder/Textures/Bottom.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: bcf9405fb557ef647ba691d00424b888, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: bcf9405fb557ef647ba691d00424b888, type: 3}
+  - m_GUID: 7e1d1b61b6f34654eaf6ccefb3c5d932
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Window.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 7e1d1b61b6f34654eaf6ccefb3c5d932, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 7e1d1b61b6f34654eaf6ccefb3c5d932, type: 2}
+  - m_GUID: b51c3961ebc1f394ea964d56e61159a3
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Tires 2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: b51c3961ebc1f394ea964d56e61159a3, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: b51c3961ebc1f394ea964d56e61159a3, type: 2}
+  - m_GUID: acc3aae9675aef7488c47c261bd1263b
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Tires 1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: acc3aae9675aef7488c47c261bd1263b, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: acc3aae9675aef7488c47c261bd1263b, type: 2}
+  - m_GUID: 097f943f66b788d44828009b66b40b12
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Tailights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 097f943f66b788d44828009b66b40b12, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 097f943f66b788d44828009b66b40b12, type: 2}
+  - m_GUID: c1ecca1a12c147c4f8878eec3d2e8634
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Rims.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c1ecca1a12c147c4f8878eec3d2e8634, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c1ecca1a12c147c4f8878eec3d2e8634, type: 2}
+  - m_GUID: f972bc087cfee554994a65806f4e71b7
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/ReverseLights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: f972bc087cfee554994a65806f4e71b7, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: f972bc087cfee554994a65806f4e71b7, type: 2}
+  - m_GUID: 2ed8089f425a39048bb73493cb41166c
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Number Plate.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 2ed8089f425a39048bb73493cb41166c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 2ed8089f425a39048bb73493cb41166c, type: 2}
+  - m_GUID: 70aea6a0ce4cbf947982306ab64c5d65
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/HeadLights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 70aea6a0ce4cbf947982306ab64c5d65, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 70aea6a0ce4cbf947982306ab64c5d65, type: 2}
+  - m_GUID: c20f80792940d2e42ad7660073c7a7c0
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Grills.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c20f80792940d2e42ad7660073c7a7c0, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c20f80792940d2e42ad7660073c7a7c0, type: 2}
+  - m_GUID: 397b6995c1cfc6e40a70c075a733e665
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Disc.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 397b6995c1cfc6e40a70c075a733e665, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 397b6995c1cfc6e40a70c075a733e665, type: 2}
+  - m_GUID: 59bacb684a7624843bbd43b9e9aad9d4
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Brakelights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 59bacb684a7624843bbd43b9e9aad9d4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 59bacb684a7624843bbd43b9e9aad9d4, type: 2}
+  - m_GUID: 57396cd67245c664fbe0d1793995fe89
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Bottom.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 57396cd67245c664fbe0d1793995fe89, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 57396cd67245c664fbe0d1793995fe89, type: 2}
+  - m_GUID: 4c5ea3efb1d35f34f822cdb9df291740
+    m_Address: Assets/Models/Vehicles/Car folder/Materials/Body_2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 4c5ea3efb1d35f34f822cdb9df291740, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 4c5ea3efb1d35f34f822cdb9df291740, type: 2}
+  - m_GUID: bf5176189eca2a943a46af2c9b6557db
+    m_Address: Assets/Models/Vehicles/Car folder/Car.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100002, guid: bf5176189eca2a943a46af2c9b6557db, type: 3}
+    m_TargetAsset: {fileID: 100002, guid: bf5176189eca2a943a46af2c9b6557db, type: 3}
+  - m_GUID: e7f660b30d46aa144a84452fcb85e265
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Textures/BodyNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: e7f660b30d46aa144a84452fcb85e265, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e7f660b30d46aa144a84452fcb85e265, type: 3}
+  - m_GUID: ede66da7a6dd69a48a0c749051d73377
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Textures/BodyMetallicSmoothness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: ede66da7a6dd69a48a0c749051d73377, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: ede66da7a6dd69a48a0c749051d73377, type: 3}
+  - m_GUID: 5b55988d5acc27f489481a228e152676
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Textures/BodyAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 5b55988d5acc27f489481a228e152676, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 5b55988d5acc27f489481a228e152676, type: 3}
+  - m_GUID: f119de429d72e0b4daed64783cf54fad
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/SportCar20.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100000, guid: f119de429d72e0b4daed64783cf54fad, type: 3}
+    m_TargetAsset: {fileID: 100000, guid: f119de429d72e0b4daed64783cf54fad, type: 3}
+  - m_GUID: 67a163a41b66b1144aed61f2b2161d7c
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/WindowMetalness.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 67a163a41b66b1144aed61f2b2161d7c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 67a163a41b66b1144aed61f2b2161d7c, type: 2}
+  - m_GUID: 37bfd96a479327144a6116a996f495d7
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/Wheel.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 37bfd96a479327144a6116a996f495d7, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 37bfd96a479327144a6116a996f495d7, type: 2}
+  - m_GUID: ae153dc30d59a18488e2f8e2f27986f5
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/Tire01Albedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: ae153dc30d59a18488e2f8e2f27986f5, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: ae153dc30d59a18488e2f8e2f27986f5, type: 2}
+  - m_GUID: c10b5d8ae76fb1f44a676fe3f1b41f40
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/MainAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: c10b5d8ae76fb1f44a676fe3f1b41f40, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: c10b5d8ae76fb1f44a676fe3f1b41f40, type: 2}
+  - m_GUID: db99a13ef60c2704394ad0f69f588b4f
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/LicensePlateEuAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: db99a13ef60c2704394ad0f69f588b4f, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: db99a13ef60c2704394ad0f69f588b4f, type: 2}
+  - m_GUID: 30d0eba5f4d2b3a43a11d22198e57a64
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/Glass.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 30d0eba5f4d2b3a43a11d22198e57a64, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 30d0eba5f4d2b3a43a11d22198e57a64, type: 2}
+  - m_GUID: 6e3df92b52926d449842ad9475ee73a3
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/BodyAlbedo.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 6e3df92b52926d449842ad9475ee73a3, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 6e3df92b52926d449842ad9475ee73a3, type: 2}
+  - m_GUID: f765cc479be827b43bfe884cbc37e03d
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Vehicle/SportCar20/Meshes/Materials/BlackWindows.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: f765cc479be827b43bfe884cbc37e03d, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: f765cc479be827b43bfe884cbc37e03d, type: 2}
+  - m_GUID: 0198e5de617db5b4d8bd3ac6fff2a827
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/WindowMetalness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0198e5de617db5b4d8bd3ac6fff2a827, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0198e5de617db5b4d8bd3ac6fff2a827, type: 3}
+  - m_GUID: a43d8702aaba7f84ca3b1595c99dffa1
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/Tire01Normal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: a43d8702aaba7f84ca3b1595c99dffa1, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: a43d8702aaba7f84ca3b1595c99dffa1, type: 3}
+  - m_GUID: bf2bbbc49892cb944ba90e24050d659c
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/Tire01MetallicSmoothness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: bf2bbbc49892cb944ba90e24050d659c, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: bf2bbbc49892cb944ba90e24050d659c, type: 3}
+  - m_GUID: b10ff25c59fd61245b30c3351b2c17d1
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/Tire01Albedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: b10ff25c59fd61245b30c3351b2c17d1, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b10ff25c59fd61245b30c3351b2c17d1, type: 3}
+  - m_GUID: 4d7e0f32de23d7046b1031cf6ea30916
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/NumberUEA.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 4d7e0f32de23d7046b1031cf6ea30916, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 4d7e0f32de23d7046b1031cf6ea30916, type: 3}
+  - m_GUID: bbe08f768b2cd35439010f6a4815b2b6
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/NumberEUN.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: bbe08f768b2cd35439010f6a4815b2b6, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: bbe08f768b2cd35439010f6a4815b2b6, type: 3}
+  - m_GUID: b46a62e0ade980945a5718dbf40dab0f
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/MainNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: b46a62e0ade980945a5718dbf40dab0f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b46a62e0ade980945a5718dbf40dab0f, type: 3}
+  - m_GUID: 932879714a12cdb42bb22b2305f3ab4f
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/MainMetallicSmoothness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 932879714a12cdb42bb22b2305f3ab4f, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 932879714a12cdb42bb22b2305f3ab4f, type: 3}
+  - m_GUID: 456720bb8704ce243ba017dd86d9e185
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/MainAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 456720bb8704ce243ba017dd86d9e185, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 456720bb8704ce243ba017dd86d9e185, type: 3}
+  - m_GUID: 8aa4e755b4f90cb4a8c62d4c67d5124a
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/LicensePlateEuNormal.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 8aa4e755b4f90cb4a8c62d4c67d5124a, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 8aa4e755b4f90cb4a8c62d4c67d5124a, type: 3}
+  - m_GUID: 2dd0cdd68b9323f478381e69b5eafde4
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/LicensePlateEuMetallicSmoothness.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 2dd0cdd68b9323f478381e69b5eafde4, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 2dd0cdd68b9323f478381e69b5eafde4, type: 3}
+  - m_GUID: 0df4a524803b2f24ca3edfa136607c17
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Textures/LicensePlateEuAlbedo.tga
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 0df4a524803b2f24ca3edfa136607c17, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 0df4a524803b2f24ca3edfa136607c17, type: 3}
+  - m_GUID: fcac1c483fda6f94ca7c85597861ed18
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_H.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: fcac1c483fda6f94ca7c85597861ed18, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: fcac1c483fda6f94ca7c85597861ed18, type: 2}
+  - m_GUID: ae209674c9a4bc9468eafa6ac62e75c1
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_G.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: ae209674c9a4bc9468eafa6ac62e75c1, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: ae209674c9a4bc9468eafa6ac62e75c1, type: 2}
+  - m_GUID: 06ae0c5992fcca54195466ed3249e1af
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_8.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 06ae0c5992fcca54195466ed3249e1af, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 06ae0c5992fcca54195466ed3249e1af, type: 2}
+  - m_GUID: 528dcd708f568184aa3ec5ac978ad713
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_7.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 528dcd708f568184aa3ec5ac978ad713, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 528dcd708f568184aa3ec5ac978ad713, type: 2}
+  - m_GUID: 85ba04a0355970941a75193ed9334dc8
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_4.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 85ba04a0355970941a75193ed9334dc8, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 85ba04a0355970941a75193ed9334dc8, type: 2}
+  - m_GUID: 485b5b6c9be8bc84fa20faf56e94b536
+    m_Address: Assets/Models/Vehicles/Best Sports CARS - Pro 3D Models/Main/Meshes/Materials/Numbers_License_Plate/Eu_Number_1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 485b5b6c9be8bc84fa20faf56e94b536, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 485b5b6c9be8bc84fa20faf56e94b536, type: 2}
+  - m_GUID: 1e4c2f610722651479daaae54d817d84
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Mesh/Car_NO.1201.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 100032, guid: 1e4c2f610722651479daaae54d817d84, type: 3}
+    m_TargetAsset: {fileID: 100032, guid: 1e4c2f610722651479daaae54d817d84, type: 3}
+  - m_GUID: 7bd837ab56783b44baa20d3e543a6342
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/TireMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 7bd837ab56783b44baa20d3e543a6342, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 7bd837ab56783b44baa20d3e543a6342, type: 2}
+  - m_GUID: 892c26e76fcc3534eb8b353e97440c48
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/Texture/TireTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 892c26e76fcc3534eb8b353e97440c48, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 892c26e76fcc3534eb8b353e97440c48, type: 3}
+  - m_GUID: 1d2ff6dcbd431ea49a30a8a94ca8d2b6
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/Texture/RearLightTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 1d2ff6dcbd431ea49a30a8a94ca8d2b6, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1d2ff6dcbd431ea49a30a8a94ca8d2b6, type: 3}
+  - m_GUID: f26f753c9777bd843af99543268e0b5d
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/Texture/MainTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: f26f753c9777bd843af99543268e0b5d, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f26f753c9777bd843af99543268e0b5d, type: 3}
+  - m_GUID: 9d798e1b90dd8b447919c98b87d3d09b
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/Texture/BrakeDiskTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2800000, guid: 9d798e1b90dd8b447919c98b87d3d09b, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 9d798e1b90dd8b447919c98b87d3d09b, type: 3}
+  - m_GUID: e5a36a49f7e66f9438772de96f10495c
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/RimMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: e5a36a49f7e66f9438772de96f10495c, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: e5a36a49f7e66f9438772de96f10495c, type: 2}
+  - m_GUID: d8f48f6b71290cc4c90811f5f54d2ab1
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/RearLightMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: d8f48f6b71290cc4c90811f5f54d2ab1, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: d8f48f6b71290cc4c90811f5f54d2ab1, type: 2}
+  - m_GUID: 52b70203659e5654b8b1005e94b0ece3
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/MainMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 52b70203659e5654b8b1005e94b0ece3, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 52b70203659e5654b8b1005e94b0ece3, type: 2}
+  - m_GUID: 4508f79323bc84441835545a4f70ffa4
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/GlassMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 4508f79323bc84441835545a4f70ffa4, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 4508f79323bc84441835545a4f70ffa4, type: 2}
+  - m_GUID: 15d32a72a02c48a4d98fedc5920b1e0d
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/ChromeMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 15d32a72a02c48a4d98fedc5920b1e0d, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 15d32a72a02c48a4d98fedc5920b1e0d, type: 2}
+  - m_GUID: 0e251483ebb79944099c5a40a8e232cd
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/BrakeDiskMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 0e251483ebb79944099c5a40a8e232cd, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 0e251483ebb79944099c5a40a8e232cd, type: 2}
+  - m_GUID: 15ff4ba6789dd814a802a627b0fe38ca
+    m_Address: Assets/Models/Vehicles/Azerilo/Car Model No.1201 Asset/Material/BlacksMat.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 15ff4ba6789dd814a802a627b0fe38ca, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 15ff4ba6789dd814a802a627b0fe38ca, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b914e5cb41f920449abc08320c097591, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 943883a5b45297a4c8bebb38b7e41d7c, type: 2}
+    - {fileID: 11400000, guid: 9bfcc488ed46b6841ae3ccf2f0c8832e, type: 2}
