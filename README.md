@@ -5,7 +5,7 @@ This project contains the Unity based code for ARORA simulator.
 
 * Add the ssh key to your github account to access our repos using ssh: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 * Install the aws cli to access our asset files from aws s3: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-* Install Unity Editor version 2020.3.33f1 with packages Addressable 1.18.19 and Universal RP 10.10.1 : https://docs.unity3d.com/2021.1/Documentation/Manual/GettingStartedInstallingUnity.html
+* Install Unity Editor version 2021.3.24f1. Verify that the following packages are installed Addressable 1.19.19 and Universal RP 12.1.11 : https://docs.unity3d.com/2021.1/Documentation/Manual/GettingStartedInstallingUnity.html
 
 # Get the code and assets
 
@@ -18,11 +18,11 @@ git clone --recurse-submodules git@github.com:ucf-sttc/ARORA.git
 copy the assets from AWS:
 
 ```sh
-aws s3 sync s3://arora-9km/ARORA_Assets/ARORA/ .
+aws s3 sync s3://arora-9km/ARORA_Assets/2.0/ARORA/ .
 ```
 
 # Build 
-1. Open project in Unity Editor 2020.3.33f1. We only tested it to be working in this version, use other version at your own risk. The initial load will take several hours as it is regenerating the library folder.
+1. Open project in Unity Editor 2021.3.24f1. We only tested it to be working in this version, use other version at your own risk. The initial load will take several hours as it is regenerating the library folder.
    
 2. In the project panel go to Assets/Scenes and make sure all the numbered scenes have been marked as addressable. There will be a checkbox in the inspector of each scene and they can be selected as a group to speed up the process of checking
 
@@ -34,4 +34,4 @@ aws s3 sync s3://arora-9km/ARORA_Assets/ARORA/ .
 
    1. In the me nu bar go to File -> Build Settings.
    2. Go to Player Settings -> Player -> Comfiguration - > Scripting Backend : Select Mono
-   3. Click Build
+   3. In the original Build Settings panel click Build
