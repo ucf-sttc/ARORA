@@ -48,22 +48,19 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
 
     HLSLINCLUDE
 
-    #pragma multi_compile __ _ALPHATEST_ON
+    #pragma multi_compile_fragment __ _ALPHATEST_ON
 
     ENDHLSL
 
     SubShader
     {
-        Tags { "Queue" = "Geometry-100" "RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" "IgnoreProjector" = "False"}
+        Tags { "Queue" = "Geometry-100" "RenderType" = "Opaque" "RenderPipeline" = "UniversalPipeline" "UniversalMaterialType" = "Lit" "IgnoreProjector" = "False" "TerrainCompatible" = "True"}
 
         Pass
         {
             Name "ForwardLit"
             Tags { "LightMode" = "UniversalForward" }
             HLSLPROGRAM
-            // Required to compile gles 2.0 with standard srp library
-            #pragma prefer_hlslcc gles
-            #pragma exclude_renderers d3d11_9x
             #pragma target 3.0
 
             #pragma vertex SplatmapVert
@@ -74,24 +71,32 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
 
             // -------------------------------------
             // Universal Pipeline keywords
-            #pragma multi_compile _ _MAIN_LIGHT_SHADOWS
-            #pragma multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE
+            #pragma multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
             #pragma multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS
-            #pragma multi_compile _ _ADDITIONAL_LIGHT_SHADOWS
-            #pragma multi_compile _ _SHADOWS_SOFT
-            #pragma multi_compile _ _MIXED_LIGHTING_SUBTRACTIVE
+            #pragma multi_compile_fragment _ _ADDITIONAL_LIGHT_SHADOWS
+            #pragma multi_compile_fragment _ _REFLECTION_PROBE_BLENDING
+            #pragma multi_compile_fragment _ _SHADOWS_SOFT
+            #pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
+            #pragma multi_compile _ SHADOWS_SHADOWMASK
+            #pragma multi_compile_fragment _ _SCREEN_SPACE_OCCLUSION
+            #pragma multi_compile_fragment _ _DBUFFER_MRT1 _DBUFFER_MRT2 _DBUFFER_MRT3
+            #pragma multi_compile_fragment _ _LIGHT_LAYERS
+            #pragma multi_compile_fragment _ _LIGHT_COOKIES
+            #pragma multi_compile _ _CLUSTERED_RENDERING
 
             // -------------------------------------
             // Unity defined keywords
             #pragma multi_compile _ DIRLIGHTMAP_COMBINED
             #pragma multi_compile _ LIGHTMAP_ON
+            #pragma multi_compile _ DYNAMICLIGHTMAP_ON
             #pragma multi_compile_fog
+            #pragma multi_compile_fragment _ DEBUG_DISPLAY
             #pragma multi_compile_instancing
-            #pragma instancing_options assumeuniformscaling nomatrices nolightprobe nolightmap
+            #pragma instancing_options norenderinglayer assumeuniformscaling nomatrices nolightprobe nolightmap
 
-            #pragma shader_feature_local _TERRAIN_BLEND_HEIGHT
+            #pragma shader_feature_local_fragment _TERRAIN_BLEND_HEIGHT
             #pragma shader_feature_local _NORMALMAP
-            #pragma shader_feature_local _MASKMAP            
+            #pragma shader_feature_local_fragment _MASKMAP
             // Sample normal in pixel shader when doing instancing
             #pragma shader_feature_local _TERRAIN_INSTANCED_PERPIXEL_NORMAL
 
@@ -106,11 +111,9 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
             Tags{"LightMode" = "ShadowCaster"}
 
             ZWrite On
+            ColorMask 0
 
             HLSLPROGRAM
-            // Required to compile gles 2.0 with standard srp library
-            #pragma prefer_hlslcc gles
-            #pragma exclude_renderers d3d11_9x
             #pragma target 2.0
 
             #pragma vertex ShadowPassVertex
@@ -118,6 +121,63 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
 
             #pragma multi_compile_instancing
             #pragma instancing_options assumeuniformscaling nomatrices nolightprobe nolightmap
+
+            // -------------------------------------
+            // Universal Pipeline keywords
+
+            // This is used during shadow map generation to differentiate between directional and punctual light shadows, as they use different formulas to apply Normal Bias
+            #pragma multi_compile_vertex _ _CASTING_PUNCTUAL_LIGHT_SHADOW
+
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitInput.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitPasses.hlsl"
+            ENDHLSL
+        }
+
+        Pass
+        {
+            Name "GBuffer"
+            Tags{"LightMode" = "UniversalGBuffer"}
+
+            HLSLPROGRAM
+            #pragma exclude_renderers gles
+            #pragma target 3.0
+            #pragma vertex SplatmapVert
+            #pragma fragment SplatmapFragment
+
+            #define _METALLICSPECGLOSSMAP 1
+            #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A 1
+
+            // -------------------------------------
+            // Universal Pipeline keywords
+            #pragma multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+            //#pragma multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS
+            //#pragma multi_compile _ _ADDITIONAL_LIGHT_SHADOWS
+            #pragma multi_compile_fragment _ _REFLECTION_PROBE_BLENDING
+            #pragma multi_compile_fragment _ _SHADOWS_SOFT
+            #pragma multi_compile _ _MIXED_LIGHTING_SUBTRACTIVE
+            #pragma multi_compile_fragment _ _DBUFFER_MRT1 _DBUFFER_MRT2 _DBUFFER_MRT3
+            #pragma multi_compile_fragment _ _LIGHT_LAYERS
+
+            // -------------------------------------
+            // Unity defined keywords
+            #pragma multi_compile _ LIGHTMAP_SHADOW_MIXING
+            #pragma multi_compile _ SHADOWS_SHADOWMASK
+            #pragma multi_compile _ DIRLIGHTMAP_COMBINED
+            #pragma multi_compile _ LIGHTMAP_ON
+            #pragma multi_compile _ DYNAMICLIGHTMAP_ON
+            #pragma multi_compile_fragment _ _GBUFFER_NORMALS_OCT
+            #pragma multi_compile_fragment _ _RENDER_PASS_ENABLED
+
+            //#pragma multi_compile_fog
+            #pragma multi_compile_instancing
+            #pragma instancing_options norenderinglayer assumeuniformscaling nomatrices nolightprobe nolightmap
+
+            #pragma shader_feature_local _TERRAIN_BLEND_HEIGHT
+            #pragma shader_feature_local _NORMALMAP
+            #pragma shader_feature_local _MASKMAP
+            // Sample normal in pixel shader when doing instancing
+            #pragma shader_feature_local _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+            #define TERRAIN_GBUFFER 1
 
             #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitInput.hlsl"
             #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitPasses.hlsl"
@@ -133,9 +193,6 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
             ColorMask 0
 
             HLSLPROGRAM
-            // Required to compile gles 2.0 with standard srp library
-            #pragma prefer_hlslcc gles
-            #pragma exclude_renderers d3d11_9x
             #pragma target 2.0
 
             #pragma vertex DepthOnlyVertex
@@ -151,13 +208,29 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
 
         Pass
         {
+            Name "DepthNormals"
+            Tags{"LightMode" = "DepthNormals"}
+
+            ZWrite On
+
+            HLSLPROGRAM
+            #pragma target 2.0
+
+            #pragma shader_feature_local _NORMALMAP
+            #pragma multi_compile_instancing
+            #pragma instancing_options assumeuniformscaling nomatrices nolightprobe nolightmap
+
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitInput.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitDepthNormalsPass.hlsl"
+            ENDHLSL
+        }
+
+        Pass
+        {
             Name "SceneSelectionPass"
             Tags { "LightMode" = "SceneSelectionPass" }
 
             HLSLPROGRAM
-            // Required to compile gles 2.0 with standard srp library
-            #pragma prefer_hlslcc gles
-            #pragma exclude_renderers d3d11_9x
             #pragma target 2.0
 
             #pragma vertex DepthOnlyVertex
@@ -178,11 +251,6 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
             Tags { "LightMode" = "Segmentation" }
             
             HLSLPROGRAM
-            // Required to compile gles 2.0 with standard srp library
-            #pragma prefer_hlslcc gles
-            #pragma exclude_renderers d3d11_9x
-            #pragma target 3.0
-
             #pragma vertex SegVert
             #pragma fragment SegFragment
 
@@ -211,38 +279,49 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
 
                 o.uvMainAndLM.xy = v.texcoord;
                 o.uvMainAndLM.zw = v.texcoord * unity_LightmapST.xy + unity_LightmapST.zw;
-#ifndef TERRAIN_SPLAT_BASEPASS
-                o.uvSplat01.xy = TRANSFORM_TEX(v.texcoord, _Splat0);
-                o.uvSplat01.zw = TRANSFORM_TEX(v.texcoord, _Splat1);
-                o.uvSplat23.xy = TRANSFORM_TEX(v.texcoord, _Splat2);
-                o.uvSplat23.zw = TRANSFORM_TEX(v.texcoord, _Splat3);
-#endif
 
-                half3 viewDirWS = GetWorldSpaceViewDir(Attributes.positionWS);
-#if !SHADER_HINT_NICE_QUALITY
-                viewDirWS = SafeNormalize(viewDirWS);
-#endif
+                #ifndef TERRAIN_SPLAT_BASEPASS
+                    o.uvSplat01.xy = TRANSFORM_TEX(v.texcoord, _Splat0);
+                    o.uvSplat01.zw = TRANSFORM_TEX(v.texcoord, _Splat1);
+                    o.uvSplat23.xy = TRANSFORM_TEX(v.texcoord, _Splat2);
+                    o.uvSplat23.zw = TRANSFORM_TEX(v.texcoord, _Splat3);
+                #endif
 
-#if defined(_NORMALMAP) && !defined(ENABLE_TERRAIN_PERPIXEL_NORMAL)
-                float4 vertexTangent = float4(cross(float3(0, 0, 1), v.normalOS), 1.0);
-                VertexNormalInputs normalInput = GetVertexNormalInputs(v.normalOS, vertexTangent);
+            #if defined(DYNAMICLIGHTMAP_ON)
+                o.dynamicLightmapUV = v.texcoord * unity_DynamicLightmapST.xy + unity_DynamicLightmapST.zw;
+            #endif
 
-                o.normal = half4(normalInput.normalWS, viewDirWS.x);
-                o.tangent = half4(normalInput.tangentWS, viewDirWS.y);
-                o.bitangent = half4(normalInput.bitangentWS, viewDirWS.z);
-#else
-                o.normal = TransformObjectToWorldNormal(v.normalOS);
-                o.viewDir = viewDirWS;
-                o.vertexSH = SampleSH(o.normal);
-#endif
-                o.fogFactorAndVertexLight.x = ComputeFogFactor(Attributes.positionCS.z);
-                o.fogFactorAndVertexLight.yzw = VertexLighting(Attributes.positionWS, o.normal.xyz);
+                #if defined(_NORMALMAP) && !defined(ENABLE_TERRAIN_PERPIXEL_NORMAL)
+                    half3 viewDirWS = GetWorldSpaceNormalizeViewDir(Attributes.positionWS);
+                    float4 vertexTangent = float4(cross(float3(0, 0, 1), v.normalOS), 1.0);
+                    VertexNormalInputs normalInput = GetVertexNormalInputs(v.normalOS, vertexTangent);
+
+                    o.normal = half4(normalInput.normalWS, viewDirWS.x);
+                    o.tangent = half4(normalInput.tangentWS, viewDirWS.y);
+                    o.bitangent = half4(normalInput.bitangentWS, viewDirWS.z);
+                #else
+                    o.normal = TransformObjectToWorldNormal(v.normalOS);
+                    o.vertexSH = SampleSH(o.normal);
+                #endif
+
+                half fogFactor = 0;
+                #if !defined(_FOG_FRAGMENT)
+                    fogFactor = ComputeFogFactor(Attributes.positionCS.z);
+                #endif
+
+                #ifdef _ADDITIONAL_LIGHTS_VERTEX
+                    o.fogFactorAndVertexLight.x = fogFactor;
+                    o.fogFactorAndVertexLight.yzw = VertexLighting(Attributes.positionWS, o.normal.xyz);
+                #else
+                    o.fogFactor = fogFactor;
+                #endif
+
                 o.positionWS = Attributes.positionWS;
                 o.clipPos = Attributes.positionCS;
 
-#if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
-                o.shadowCoord = GetShadowCoord(Attributes);
-#endif
+                #if defined(REQUIRES_VERTEX_SHADOW_COORD_INTERPOLATOR)
+                    o.shadowCoord = GetShadowCoord(Attributes);
+                #endif
 
                 return o;
             }
@@ -267,6 +346,29 @@ Shader "Custom/Terrain/Lit_SegmentationEnabled"
             }
 
             ENDHLSL            
+        }
+
+        Pass
+        {
+            Name "Meta"
+            Tags{"LightMode" = "Meta"}
+
+            Cull Off
+
+            HLSLPROGRAM
+            #pragma vertex TerrainVertexMeta
+            #pragma fragment TerrainFragmentMeta
+
+            #pragma multi_compile_instancing
+            #pragma instancing_options assumeuniformscaling nomatrices nolightprobe nolightmap
+            #pragma shader_feature EDITOR_VISUALIZATION
+            #define _METALLICSPECGLOSSMAP 1
+            #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A 1
+
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitInput.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/Shaders/Terrain/TerrainLitMetaPass.hlsl"
+
+            ENDHLSL
         }
 
         UsePass "Hidden/Nature/Terrain/Utilities/PICKING"
