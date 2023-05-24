@@ -1,11 +1,13 @@
 # Introduction 
 This project contains the Unity based code for ARORA simulator.
 
-# Pre-requisites
+# Getting Started
+
+# Install the pre-requisites
 
 * Add the ssh key to your github account to access our repos using ssh: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 * Install the aws cli to access our asset files from aws s3: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-* Install Unity Editor version 2021.3.24f1. Verify that the following packages are installed Addressable 1.19.19 and Universal RP 12.1.11 : https://docs.unity3d.com/2021.1/Documentation/Manual/GettingStartedInstallingUnity.html
+* Install Unity Editor version 2021.3.24f1 from unityhub://2021.3.24f1/cf10dcf7010d. Verify that the following packages are installed Addressable 1.19.19 and Universal RP 12.1.11 : https://docs.unity3d.com/2021.1/Documentation/Manual/GettingStartedInstallingUnity.html
 
 # Get the code and assets
 
@@ -18,7 +20,7 @@ git clone --recurse-submodules git@github.com:ucf-sttc/ARORA.git
 copy the assets from AWS:
 
 ```sh
-aws s3 sync s3://arora-9km/ARORA_Assets/2.0/ARORA/ .
+aws s3 sync s3://arora-9km/ARORA_Assets/2.0/ARORA/ ./ARORA/
 ```
 
 # Build 
